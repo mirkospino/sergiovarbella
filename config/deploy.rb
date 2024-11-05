@@ -1,5 +1,5 @@
-set :application, "sergiovarbella"
-set :repo_url, "git@gitlab.com:mirkospino/sergiovarbella.git"
+set :application, "sergiovarbella.com"
+set :repo_url, "git@github.com:mirkospino/sergiovarbella.git"
 set :branch, 'main'
 set :linked_files, fetch(:linked_files, []).push('.env', 'web/.htaccess')
 set :linked_dirs, fetch(:linked_dirs, []).push('web/app/uploads', 'web/app/updraft')
