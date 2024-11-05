@@ -1,0 +1,44 @@
+<?php
+
+return [
+    [
+        'type' => 'cpt',
+        'name' => 'MY_CUSTOM_POST_TYPE',
+        'supports' => [
+            'title', 'editor', 'thumbnail'
+        ],
+        'labels' => [
+            'has_many' => 'MY_CUSTOM_POST_TYPE',
+            'overrides' => [
+                'all_items' => 'Tutti MY_CUSTOM_POST_TYPE',
+                'add_new' => 'Aggiungi Nuovo',
+                'add_new_item' => 'Aggiungi un nuovo MY_CUSTOM_POST_TYPE',
+                'view_item' => 'Vedi il MY_CUSTOM_POST_TYPE',
+                'view_items' => 'Vedi MY_CUSTOM_POST_TYPE',
+                'name' => 'MY_CUSTOM_POST_TYPE',
+                'singular_name' => 'MY_CUSTOM_POST_TYPE',
+                'menu_name' => 'MY_CUSTOM_POST_TYPE',
+                'name_admin_bar' => 'MY_CUSTOM_POST_TYPE',
+                'search_items' => 'Cerca MY_CUSTOM_POST_TYPE',
+                'not_found' => 'Nessun MY_CUSTOM_POST_TYPE trovato',
+                'not_found_in_trash' => 'Nessun MY_CUSTOM_POST_TYPE trovato nel cestino',
+                'parent_item-colon' => 'Parent MY_CUSTOM_POST_TYPE:',
+                'archives' => 'MY_CUSTOM_POST_TYPE',
+                'attributes' => 'Attributi MY_CUSTOM_POST_TYPE',
+                'insert_into_item' => 'Inserisci in MY_CUSTOM_POST_TYPE',
+                'uploaded_to_this_item' => 'Caricato in MY_CUSTOM_POST_TYPE',
+                'filter_items_list' => 'Filtra la lista MY_CUSTOM_POST_TYPE',
+                'items_list_navigation' => 'Lista MY_CUSTOM_POST_TYPE',
+                'items_list' => 'Lista MY_CUSTOM_POST_TYPE',
+            ]
+        ],
+        'config' => [
+            'menu_position' => 10,
+                'has_archive' => true,
+            'rewrite' => [
+
+                'slug' => 'MY_CUSTOM_POST_TYPE',
+            ]
+        ]
+    ],
+];

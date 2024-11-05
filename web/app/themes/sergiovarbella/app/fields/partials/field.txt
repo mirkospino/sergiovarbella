@@ -1,0 +1,30 @@
+<?php
+
+namespace App;
+
+use StoutLogic\AcfBuilder\FieldsBuilder;
+
+// ACF CHEATSHEET https://github.com/Log1x/acf-builder-cheatsheet
+
+$field = new FieldsBuilder('field');
+$field
+    ->addRepeater('repeater_field', [
+        'label' => 'Repeater Field',
+        'instructions' => '',
+        'required' => 0,
+        'conditional_logic' => [],
+        'wrapper' => [
+          'width' => '',
+          'class' => '',
+          'id' => '',
+        ],
+        'min' => 0,
+        'max' => 0,
+        'layout' => 'table',
+        'button_label' => '',
+        'sub_fields' => [],
+    ])
+    ->addFields(get_field_partial('partials.subfields.subfield'))
+    ->endRepeater();
+
+return $field;

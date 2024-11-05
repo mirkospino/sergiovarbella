@@ -1,0 +1,17 @@
+/** Header **/
+ul#menu-main-menu,
+ul#menu-footer-menu {
+  justify-content: center;
+  li {
+    margin: 0 1rem;
+  }
+}
+ul#menu-main-menu {
+  margin: 1rem 0;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  justify-content: center;
+  @include media-breakpoint-up(md) {
+    font-size: 1.5rem;
+  }
+}

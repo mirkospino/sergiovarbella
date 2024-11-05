@@ -1,0 +1,23 @@
+/** Splide **/
+
+.splide {
+  .splide__arrows {
+    .splide__arrow {
+      top: 110%;
+    }
+  }
+  .splide__pagination {
+    top: 105%;
+    .splide__pagination__page.is-active {
+      background-color: $gray-dark;
+    }
+  }
+  .splide__slide {
+    img {
+      opacity: 0.95;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

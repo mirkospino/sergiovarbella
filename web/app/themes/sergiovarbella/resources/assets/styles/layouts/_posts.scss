@@ -1,0 +1,29 @@
+/** Posts **/
+
+.post-teaser {
+  .image {
+    img.image-teaser {
+      opacity: 0.95;
+    }
+    .overlay {
+      transition: all 0.5s;
+      opacity: 0;
+      &:hover {
+      }
+      .post-cats {
+        font-size: 0.9rem;
+      }
+    }
+  }
+  &:hover {
+    .image {
+      img.image-teaser {
+        opacity: 1;
+      }
+      .overlay {
+        opacity: 1;
+        border: 1px solid $gray-dark;
+      }
+    }
+  }
+}

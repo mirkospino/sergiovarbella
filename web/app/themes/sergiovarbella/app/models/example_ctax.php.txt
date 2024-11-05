@@ -1,0 +1,58 @@
+<?php
+
+return [
+    'active' => true,
+    'type' => 'tax',
+    'name' => 'MY_CUSTOM_TAXONOMY',
+    'links' => [
+        'post', 'post',
+    ],
+    'labels' => [
+        'has_one' => 'MY_CUSTOM_TAXONOMY',
+        'has_many' => 'MY_CUSTOM_TAXONOMY',
+        'text_domain' => 'sage',
+        'overrides' => [
+            'name' => 'MY_CUSTOM_TAXONOMY',
+            'singular_name' => 'MY_CUSTOM_TAXONOMY',
+            'menu_name' => 'MY_CUSTOM_TAXONOMY',
+            'search_items' => 'Cerca MY_CUSTOM_TAXONOMY',
+            'popular_items' => 'MY_CUSTOM_TAXONOMY Popolari',
+            'all_items' => 'Tutte le MY_CUSTOM_TAXONOMY',
+            'edit_item' => 'Modifica MY_CUSTOM_TAXONOMY',
+            'view_item' => 'Vedi MY_CUSTOM_TAXONOMY',
+            'update_item' => 'Aggiorna MY_CUSTOM_TAXONOMY',
+            'add_new_item' => 'Inserisci MY_CUSTOM_TAXONOMY',
+            'new_item_name' => 'Nuovo nome MY_CUSTOM_TAXONOMY',
+            'separate_items_with_commas' => 'Separate tags with commass',
+            'add_or_remove_items' => 'Aggiungi o Rimuovi MY_CUSTOM_TAXONOMY',
+            'choose_from_most_used' => 'Scegli tra le MY_CUSTOM_TAXONOMY più popolari',
+            'not_found' => 'Nessuna MY_CUSTOM_TAXONOMY trovata',
+            'no_terms' => 'Nessuna MY_CUSTOM_TAXONOMY',
+            'items_list_navigation' => 'Naviga tra le MY_CUSTOM_TAXONOMY',
+            'items_list' => 'Lista MY_CUSTOM_TAXONOMY',
+        ],
+    ],
+    'config' => [
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'show_in_nav_menus' => true,
+        'show_in_rest' => true,
+        'rest_base' => 'MY_CUSTOM_TAXONOMY',
+        'rest_controller_class' => 'WP_REST_Terms_Controller',
+        'show_tagcloud' => true,
+        'show_in_quick_edit' => true,
+        'show_admin_column' => false,
+        'capabilities' => [
+            'manage_terms' => 'manage_categories',
+            'edit_terms' => 'manage_categories',
+            'delete_terms' => 'manage_categories',
+            'assign_terms' => 'edit_posts',
+        ],
+        'rewrite' => [
+            'slug' => 'MY_CUSTOM_TAXONOMY',
+            'hierarchical' => false,
+        ],
+    ],
+];

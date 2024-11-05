@@ -1,0 +1,15 @@
+<?php
+
+namespace App;
+
+use StoutLogic\AcfBuilder\FieldsBuilder;
+
+$fields = new FieldsBuilder('block');
+
+$fields
+    ->setLocation('block', '==', 'acf/block');
+
+$fields
+    ->addText('title_block', ['label' => 'Titolo']);
+
+return $fields;

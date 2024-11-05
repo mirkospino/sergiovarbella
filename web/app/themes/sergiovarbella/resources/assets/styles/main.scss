@@ -1,0 +1,12 @@
+@import "common/variables";
+@import "~bootstrap/scss/bootstrap";
+@import "~@splidejs/splide/dist/css/splide.min.css";
+
+@import "common/_global";
+
+@import "components/_elements";
+@import "components/_splide";
+
+@import "layouts/_menu";
+@import "layouts/_header";
+@import "layouts/_posts";

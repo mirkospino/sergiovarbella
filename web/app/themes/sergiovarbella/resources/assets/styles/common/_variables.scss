@@ -1,0 +1,50 @@
+/** Custom Variables **/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+/** Bootstrap Variables **/
+
+/* Color system */
+
+$gray: #999999;
+$gray-light: #eeeeee;
+$gray-mid: #666666;
+$gray-dark: #333333;
+$black: #000000;
+$white: #ffffff;
+
+$body: $gray;
+
+$primary: $body;
+$secondary: $gray-light;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "light": $gray-light,
+  "dark": $gray-dark,
+);
+
+/* Text */
+$body-color: $body;
+$link-decoration: none;
+$font-family-sans-serif: "Roboto", sans-serif;
+$font-size-base: 1.125rem;
+$font-size-xs: 0.75rem;
+$font-weight-lighter: 100;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+//$font-weight-bolder: 900;
+$font-weight-base: $font-weight-lighter;
+
+/* Headings */
+//$headings-font-family: 'Open Sans', sans-serif;
+$headings-font-weight: $font-weight-light;
+$headings-color: $primary;
+
+/* Modal */
+$modal-backdrop-opacity: 0.8;
+$modal-header-padding: 1rem;
+$modal-content-bg: $black;
+$modal-inner-padding: 0;
