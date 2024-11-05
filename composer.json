@@ -2,32 +2,6 @@
 	"name": "roots/bedrock",
 	"type": "project",
 	"license": "MIT",
-	"description": "WordPress boilerplate with modern development tools, easier configuration, and an improved folder structure",
-	"homepage": "https://roots.io/bedrock/",
-	"authors": [
-		{
-			"name": "Scott Walkinshaw",
-			"email": "scott.walkinshaw@gmail.com",
-			"homepage": "https://github.com/swalkinshaw"
-		},
-		{
-			"name": "Ben Word",
-			"email": "ben@benword.com",
-			"homepage": "https://github.com/retlehs"
-		}
-	],
-	"keywords": [
-		"bedrock",
-		"composer",
-		"roots",
-		"wordpress",
-		"wp",
-		"wp-config"
-	],
-	"support": {
-		"issues": "https://github.com/roots/bedrock/issues",
-		"forum": "https://discourse.roots.io/category/bedrock"
-	},
 	"repositories": [
 		{
 			"type": "composer",
@@ -39,7 +13,7 @@
 		},
 		{
 			"type": "composer",
-			"url": "https://pivvenit.github.io/acf-composer-bridge/composer/v3/wordpress-muplugin/"
+			"url": "https://connect.advancedcustomfields.com"
 		}
 	],
 	"require": {
@@ -54,7 +28,7 @@
 		"roots/wp-password-bcrypt": "1.1.0",
 		"wpackagist-plugin/updraftplus": "^1.16",
 		"wpackagist-plugin/wordpress-seo": "^19.0",
-		"advanced-custom-fields/advanced-custom-fields-pro": "^5.11",
+		"wpengine/advanced-custom-fields-pro": "*",
 		"wpackagist-plugin/complianz-gdpr": "^6.3.4",
 		"wpackagist-plugin/google-site-kit": "^1.86"
 	},
@@ -76,7 +50,8 @@
 	"extra": {
 		"installer-paths": {
 			"web/app/mu-plugins/{$name}/": [
-				"type:wordpress-muplugin"
+				"type:wordpress-muplugin",
+				"wpengine/advanced-custom-fields-pro"
 			],
 			"web/app/plugins/{$name}/": [
 				"type:wordpress-plugin"
@@ -85,14 +60,10 @@
 				"type:wordpress-theme"
 			]
 		},
+		"private-composer-installer": {
+			"dotenv-path": ".",
+			"dotenv-name": ".env"
+		},
 		"wordpress-install-dir": "web/wp"
-	},
-	"scripts": {
-		"post-root-package-install": [
-			"php -r \"copy('.env.example', '.env');\""
-		],
-		"test": [
-			"phpcs"
-		]
 	}
 }
